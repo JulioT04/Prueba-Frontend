@@ -28,6 +28,9 @@ export class UserService {
   updateUser(id: any, user: User) {
     return this.http.put<User>(`${this.basePath}/users/${id}`, user);
   }
+  upgradeUser(id: any, user: User) {
+    return this.http.put<User>(`${this.basePath}/users/upgrade/${id}`, user);
+  }
   deleteUser(id: any) {
     return this.http.delete<User>(`${this.basePath}/users/${id}`);
   }
