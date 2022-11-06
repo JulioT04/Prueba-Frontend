@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-lg-6">
+      <h2>Edit Beca</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <form [formGroup]="myForm" autocomplete="off">
+        <div class="col-lg-12">
+          <mat-form-field class="example-container" [style.fontSize.px]="16">
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title" />
+          </mat-form-field>
+          <div
+            *ngIf="
+              myForm.get('title')?.hasError('required') &&
+              myForm.get('title')?.touched
+            "
+            style="margin-top: -20px"
+          >
+            <span class="mda-form-msg"> This field is required </span>
+          </div>
+          <div
+            *ngIf="myForm.get('title')?.hasError('maxlength')"
+            style="margin-top: -20px"
+          >
+            <span class="mda-form-msg">
+              This field must have a maximum of 60 characters
+            </span>
+          </div>
+        </div>
+  
+        <div class="col-lg-12">
+          <mat-form-field class="example-container" [style.fontSize.px]="16">
+            <mat-label>imgUrl</mat-label>
+            <input matInput formControlName="imgUrl" />
+          </mat-form-field>
+          <div
+            *ngIf="
+              myForm.get('imgUrl')?.hasError('required') &&
+              myForm.get('imgUrl')?.touched
+            "
+            style="margin-top: -20px"
+          >
+            <span class="mda-form-msg">This field is required </span>
+          </div>
+        </div>
+  
+        <div class="col-lg-12">
+          <mat-form-field class="example-container" [style.fontSize.px]="16">
+            <mat-label>description</mat-label>
+            <input matInput formControlName="description" />
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-12">
+            <button
+              class="btn btn-success btn-lg float-right"
+              [disabled]="myForm.invalid"
+              type="button"
+              style="margin-left: 10 px"
+              (click)="updateBeca()"
+            >
+              Update
+            </button>
+            <button
+              class="btn btn-secondary btn-lg float-right"
+              type="button"
+              [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'becas']"
+            >
+              Cancel
+            </button>
+          </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+.beca-card {
+    margin-top: 30px;
+    max-width: 380px;
+    border-radius: 10px;
+    background-color: #D9D9D970;
+    margin-bottom: 30px;
+  }
+
+  p{
+    text-align: center;
+  }
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container>*{
+  flex: 1 1 380px;
+}

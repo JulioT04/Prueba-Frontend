@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<div class="navbar">
+    <div class="top">
+    </div>
+    <div class="user" id="usuario">
+        <img src="https://cdn-icons-png.flaticon.com/512/16/16363.png" alt="">
+        <h4 class="name" id="nombreUsu"> @ {{ nombreUsu }}</h4>
+        <p class="mail">{{ nombreCompleto }}</p>
+    </div>
+    <div class="menu">
+      
+        <div class="menu-item">
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'inicio']">
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'premium']">
+                <mat-icon>star</mat-icon>
+                <span>Hazte Premium</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'becas']">
+                <mat-icon>school</mat-icon>
+                <span>Becas</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'foro',route.snapshot.paramMap.get('id')]">
+                <mat-icon> chat_bubble_outline</mat-icon>
+                <span>Foro</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'cursos']">
+                <mat-icon>book</mat-icon>
+                <span>Cursos</span>
+            </button>
+            <button mat-button class="menu-button" [routerLink]="['/homePage',route.snapshot.paramMap.get('id'),'avisos']">
+                <mat-icon>notifications</mat-icon>
+                <span>Avisos</span>
+            </button>
+        </div>
+    </div>
+</div>

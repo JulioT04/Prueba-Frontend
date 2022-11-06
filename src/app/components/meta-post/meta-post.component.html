@@ -1,0 +1,15 @@
+<div class="article-meta">
+    
+    <img src="../../../assets/img/logo-fondo.png" />
+  
+    <div class="info">
+      <a class="author">
+        {{ nombreCompleto }}
+      </a>
+      <span class="date">
+        {{ post.createdAt | date: 'longDate' }}
+      </span>
+    </div>
+  
+    <ng-content></ng-content>
+  </div>

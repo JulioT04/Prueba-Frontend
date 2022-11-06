@@ -1,0 +1,84 @@
+<div class="article-page">
+
+    <div class="banner">
+      <div class="container"  >
+        <h1>{{ post.title }}</h1>
+  
+        <div class="article-actions">
+            <app-meta-post [post]="post">
+      
+                <span [hidden]="canModify">
+                <a class="btn btn-sm btn-outline-secondary"
+                   [routerLink]="">
+                  <i class="ion-edit"></i> Edit Article
+                </a>
+      
+                <button class="btn btn-sm btn-outline-danger"
+                  [ngClass]="{disabled: isDeleting}"
+                  (click)="deletePost(post.id)">
+                  <i class="ion-trash-a"></i> Delete Article
+                </button>
+              </span>
+      
+              <span [hidden]="canModify">
+      
+                <app-favorite-button
+                  [post]="post"
+                  (toggle)="onToggleFavorite($event)">
+                  {{ post.favorite ? 'Unfavorite' : 'Favorite' }} Post <span class="counter">({{ post.favoritesCount }})</span>
+                </app-favorite-button>
+              </span>
+      
+            </app-meta-post>
+          </div>
+      </div>
+    </div>
+  
+    <div class="container page">
+  
+      <div class="row article-content">
+        <div class="col-md-12">
+  
+          <div> {{ post.body }}</div>
+  
+          <ul class="tag-list">
+            <li *ngFor="let tag of lista"
+              class="tag-default tag-pill tag-outline">
+              {{ tag }}
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+  
+      <hr />
+  
+
+  
+      <div class="row">
+        <div class="col-xs-12 col-md-8 offset-md-2">
+  
+         <form class="card form-group" [formGroup]="commentForm">
+              <fieldset [disabled]="isSubmitting">
+                <div class="card-block">
+                  <textarea class="form-control"
+                    placeholder="Write a comment..."
+                    rows="3"
+                    formControlName="body"
+                  ></textarea>
+                </div>
+                <div class="card-footer">
+                  <img src="../../../assets/LogoIHC.png" class="comment-author-img" />
+                  <button class="btn btn-sm btn-primary" type="submit" (click)="addComment()">
+                   Post Comment
+                  </button>
+                </div>
+              </fieldset>
+        </form>
+  
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

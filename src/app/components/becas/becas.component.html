@@ -1,0 +1,47 @@
+<div>
+  <div>
+    <h2>  List of Becas</h2>
+  </div>
+  <div class="col-log-6" style="text-align:right">
+    <button mat-raised-button color="warn" [routerLink]="['/homePage/2/add']">
+      New
+    </button>
+  </div>
+</div>
+
+
+<div class="container">
+    <mat-card class="beca-card" *ngFor="let beca of beca">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{beca.title}}</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{beca.imgUrl}} alt="Beca">
+      <mat-card-content>
+        <p>
+         {{beca.description}}
+        </p>
+        
+      </mat-card-content>
+      <mat-card-actions>
+        
+        <button mat-button [routerLink]="['/detalle']">Ver requisitos</button>
+         
+        <a class="pointer" [routerLink]="['/homePage/2/edit',beca.id]" style="color: #1878b0">
+          <mat-icon>edit</mat-icon>
+        </a>
+        <a
+        (click)="deleteBeca(beca.id)"
+        class="pointer"
+        style="color: #e15639"
+      >
+        <mat-icon>delete</mat-icon>
+      </a>
+      </mat-card-actions>
+    </mat-card>
+   
+  </div>
+  
+
+

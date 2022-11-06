@@ -1,0 +1,391 @@
+.article-page .banner {
+    padding: 2rem 0
+}
+
+.article-page .banner h1 {
+    font-size: 2.8rem;
+    font-weight: 600
+}
+
+.article-page .banner .btn {
+    opacity: .8
+}
+
+.article-page .banner .btn:hover {
+    transition: .1s all;
+    opacity: 1
+}
+
+.article-page .banner .article-meta {
+    margin: 2rem 0 0
+}
+
+.article-page .banner .article-meta .author {
+    color: #fff
+}
+
+.article-page .article-content p {
+    font-family: 'source serif pro', serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem
+}
+
+.article-page .article-content h1,
+.article-page .article-content h2,
+.article-page .article-content h3,
+.article-page .article-content h4,
+.article-page .article-content h5,
+.article-page .article-content h6 {
+    font-weight: 500 !important;
+    margin: 1.6rem 0 1rem
+}
+
+.article-page .article-actions {
+    text-align: center;
+    margin: 1.5rem 0 3rem
+}
+
+.article-page .article-actions .article-meta .info {
+    text-align: left
+}
+
+.article-page .comment-form .card-block {
+    padding: 0
+}
+
+.article-page .comment-form .card-block textarea {
+    border: 0;
+    padding: 1.25rem
+}
+
+.article-page .comment-form .card-footer .btn {
+    font-weight: 700;
+    float: right
+}
+
+.article-page .comment-form .card-footer .comment-author-img {
+    height: 30px;
+    width: 30px
+}
+
+.article-page .card {
+    border: 1px solid #e5e5e5;
+    box-shadow: none !important
+}
+
+.article-page .card .card-footer {
+    border-top: 1px solid #e5e5e5;
+    box-shadow: none !important;
+    font-size: .8rem;
+    font-weight: 300
+}
+
+.article-page .card .comment-author-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px
+}
+
+.article-page .card .comment-author {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.article-page .card .date-posted {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #bbb
+}
+
+.article-page .card .mod-options {
+    float: right;
+    color: #333;
+    font-size: 1rem
+}
+
+.article-page .card .mod-options i {
+    margin-left: 5px;
+    opacity: .6;
+    cursor: pointer
+}
+
+.banner {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    margin-bottom: 2rem
+}
+
+.banner h1 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    margin-bottom: 0
+}
+
+.banner {
+    background: #88786eef;
+    box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, .3), inset 0 -8px 8px -8px rgba(0, 0, 0, .3)
+}
+
+.home-page .banner p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300 !important;
+    margin-bottom: 0
+}
+
+.home-page .banner h1 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: .5rem
+}
+
+.banner {
+    padding: 2rem 0
+}
+
+.article-page .banner h1 {
+    font-size: 2.8rem;
+    font-weight: 600
+}
+
+.article-page .banner .btn {
+    opacity: .8
+}
+
+.article-page .banner .btn:hover {
+    transition: .1s all;
+    opacity: 1
+}
+
+.article-page .banner .article-meta {
+    margin: 2rem 0 0
+}
+
+.article-page .banner .article-meta .author {
+    color: #fff
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.tag-default {
+    background-color: #818a91;
+}
+
+
+.tag-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+
+.tag-default.tag-outline {
+    border: 1px solid #ddd;
+    color: #aaa !important;
+    background: 0 0 !important;
+    margin-right: .3em;
+    margin-left: .3em;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.tag-list {
+    padding-left: 0 !important;
+    display: inline-block;
+    list-style: none !important;
+    padding-right: 20px;
+    font-family: 'Be Vietnam', sans-serif;
+
+}
+
+.tag-list li {
+    display: inline-block !important;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+.article-content p {
+    font-family: 'source serif pro', serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem
+}
+
+.article-page .article-content h1,
+.article-page .article-content h2,
+.article-page .article-content h3,
+.article-page .article-content h4,
+.article-page .article-content h5,
+.article-page .article-content h6 {
+    font-weight: 500 !important;
+    margin: 1.6rem 0 1rem
+}
+
+.article-actions {
+    text-align: center;
+    margin: 1.5rem 0 3rem
+}
+
+.article-page .article-actions .article-meta .info {
+    text-align: left
+}
+
+.col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: none
+}
+
+.form-control::placeholder {
+    color: #999;
+    opacity: 1
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #eceeef;
+    opacity: 1
+}
+
+.form-control:disabled {
+    cursor: not-allowed
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 2.5rem
+}
+
+.form-control-file,
+.form-control-range {
+    display: block
+}
+
+.form-control-label {
+    padding: .5rem .75rem;
+    margin-bottom: 0
+}
+
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: .75rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .125)
+}
+
+.comment-form .card-block {
+    padding: 0
+}
+
+.article-page .comment-form .card-block textarea {
+    border: 0;
+    padding: 1.25rem
+}
+
+.article-page .comment-form .card-footer .btn {
+    font-weight: 700;
+    float: right
+}
+
+.article-page .comment-form .card-footer .comment-author-img {
+    height: 30px;
+    width: 30px
+}
+
+.article-page .card {
+    border: 1px solid #e5e5e5;
+    box-shadow: none !important
+}
+
+.card-footer .btn {
+    font-weight: 700;
+    float: right
+}
+
+.article-page .comment-form .card-footer .comment-author-img {
+    height: 30px;
+    width: 30px
+}
+
+.article-page .card {
+    border: 1px solid #e5e5e5;
+    box-shadow: none !important
+}
+
+.article-page .card .card-footer {
+    border-top: 1px solid #e5e5e5;
+    box-shadow: none !important;
+    font-size: .8rem;
+    font-weight: 300
+}
+
+.comment-author-img {
+    height: 30px;
+    width: 30px
+}
+
+.card .comment-author-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-radius: 30px
+}

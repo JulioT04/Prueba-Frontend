@@ -1,0 +1,58 @@
+<div class="editor-page">
+    <div class="container-page">
+      <div class="row">
+        <h1>Agrega un nuevo post!</h1>
+          <form [formGroup]="postForm">
+              <fieldset>  
+              <fieldset class="form-group">
+                <input class="form-control"
+                  style="font-family: 'Be Vietnam', sans-serif; font-size: 20px;"
+                  formControlName="title"
+                  type="text"
+                  placeholder="Título" />
+              </fieldset>
+  
+              <fieldset class="form-group">
+                <input class="form-control"
+                  style="font-family: 'Be Vietnam', sans-serif;font-size: 17px;"
+                  formControlName="description"
+                  type="text"
+                  placeholder="Descripción" />
+              </fieldset>
+  
+              <fieldset class="form-group">
+                <textarea class="form-control"
+                  style="font-family: 'Be Vietnam', sans-serif;font-size: 17px;"
+                  formControlName="body"
+                  rows="8"
+                  placeholder="Escribe aquí el contenido del post.">
+                </textarea>
+              </fieldset>
+  
+              <fieldset class="form-group">
+                <input class="form-control"
+                  style="font-family: 'Be Vietnam', sans-serif;font-size: 17px;"
+                  type="text"
+                  placeholder="Ingrese tags"
+                  formControlName="tagList"/>
+  
+                <!--<div class="tag-list">
+                  <span *ngFor="let tag of tagList"
+                    class="tag-default tag-pill">
+                    <span class="tag-name">{{ tag }}</span>
+                    <mat-icon (click)="removeTag(tag)"> cancel</mat-icon>
+                    
+                  </span>
+                </div>-->
+              </fieldset>
+          
+              <button class="btn-primary" type="button" (click)="submitForm()">
+               <span>Publicar</span>
+              </button>
+  
+            </fieldset>
+          </form>
+  
+      </div>
+    </div>
+  </div>
