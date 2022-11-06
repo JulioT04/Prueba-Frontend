@@ -27,7 +27,7 @@ const routes: Routes = [
   {path:'',redirectTo:'',pathMatch:'full'},
   {path:'homePage/:id',component: HomePageComponent,
   children : [
-  {path:'premium',component: HaztePremiumComponent},
+  {path:'premium/:id',component: HaztePremiumComponent},
   {path:'becas',component: BecasComponent},
   {path:'foro/:id2',component: ForoComponent},
   {path:'new-post',component: NewPostComponent},
